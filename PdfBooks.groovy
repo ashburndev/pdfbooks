@@ -1,6 +1,9 @@
-import javax.swing.JFileChooser
+// https://www.jetbrains.com/help/idea/getting-started-with-groovy.html
+// https://www.jetbrains.com/help/idea/coding-assistance-in-groovy.html
+/// https://www.jetbrains.com/help/idea/run-debug-configuration-groovy.html
 
 def doit() {
+    println "in doit"
     println """\
 <!doctype htl>
 <html lang="en">
@@ -27,7 +30,10 @@ def doit() {
 </html>"""
 }
 
+static void main(String[] args) {
+    println "in main"
+    doit()
+}
+
 doit()
-
-
 
